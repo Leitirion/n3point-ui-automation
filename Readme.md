@@ -34,8 +34,9 @@
  2. ``` smth else? ```
 
 ###  Running (locally / CI)
-    1. ```cp .env.local .env ```
-    2. ``` npm test ```
+    1. Change cypress.env.json 
+    - ```URL```
+    2. ``` npm run cy:test ```
 
 ### Reporting
  
