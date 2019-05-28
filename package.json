@@ -1,0 +1,29 @@
+{
+  "name": "cypress-ui-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:test": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leitirion/Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leitirion/Test/issues"
+  },
+  "homepage": "https://github.com/Leitirion/Test#readme",
+  "dependencies": {
+    "cypress": "^3.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^1.11.2"
+  }
+}
