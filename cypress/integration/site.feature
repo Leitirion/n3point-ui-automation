@@ -5,4 +5,4 @@ Feature: The Site
   @focus
   Scenario: Opening a social network page
     Given I open page
-    Then I see "Google" in the title
+    Then I see "Iqa.st - single entrypoint for your team." in the title

@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/Leitirion/Test#readme",
   "dependencies": {
-    "cypress": "^3.3.1"
+    "cypress": "^3.3.1",
+    "cypress-xpath": "^1.4.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
