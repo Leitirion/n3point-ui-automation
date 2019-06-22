@@ -6,7 +6,8 @@
   "scripts": {
     "cy:test": "cypress run",
     "cy:open": "cypress open",
-    "report": "allure serve"
+    "report": "allure serve",
+    "gen":"node scripts/generate.js"
   },
   "repository": {
     "type": "git",
