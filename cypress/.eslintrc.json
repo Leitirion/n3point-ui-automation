@@ -1,6 +1,8 @@
 {
     "env": {
-      "node" : true
+      "node" : true,
+      "es6": true,
+      "mocha": true
     },
     "globals": {
       "cy": false,
@@ -12,5 +14,11 @@
       "it": false,
       "assert": false,
       "expect": false
+    },
+    "parser": "babel-eslint",
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
     }
   }
