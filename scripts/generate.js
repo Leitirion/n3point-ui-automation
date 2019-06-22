@@ -31,7 +31,7 @@ Then(\`then ${issue}\`, () => {
 `;
 // eslint-disable-next-line 
 const featurename = process.argv[2];
-const  fs = require("fs-extra");
+const fs = require("fs-extra");
 const featurePath = `./cypress/integration/features/${featurename}.feature`;
 const path = `./cypress/integration/features/${featurename}/${featurename}.js`;
 var data = template(featurename);
