@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "cypress-cucumber-preprocessor": "^1.12.0",
+    "eslint": "^6.0.0",
     "eslint-plugin-cypress": "^2.2.1"
   }
 }
