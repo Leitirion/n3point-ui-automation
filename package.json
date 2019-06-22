@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cy:test": "cypress run",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "report": "allure serve"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   "dependencies": {
     "allure-cucumberjs": "^2.0.0-beta.3",
     "cypress": "^3.3.1",
-    "cypress-xpath": "^1.4.0"
+    "cypress-xpath": "^1.4.0",
+    "mocha": "^6.1.4",
+    "mocha-allure-reporter": "^1.4.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
