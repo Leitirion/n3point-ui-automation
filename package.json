@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Leitirion/Test#readme",
   "dependencies": {
+    "allure-cucumberjs": "^2.0.0-beta.3",
     "cypress": "^3.3.1",
     "cypress-xpath": "^1.4.0"
   },
@@ -25,6 +26,6 @@
     "nonGlobalStepDefinitions": true
   },
   "devDependencies": {
-    "cypress-cucumber-preprocessor": "^1.11.2"
+    "cypress-cucumber-preprocessor": "^1.12.0"
   }
 }
