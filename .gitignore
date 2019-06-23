@@ -92,3 +92,5 @@ typings/
 #allure directories
 allure-report/
 allure-results/
+#cypress
+screenshots/
