@@ -17,5 +17,5 @@ Given(`given auth`, () => {
     .get('input[name="password"]')
     .type(password);
     cy.get('button[data-id=submit]').click();
-    
+    cy.visit('https://n3point.io');
 });
