@@ -1,27 +1,39 @@
 ---
-name: Don't login as user after sign in without google or GitHub account.
-about: Don't login as user after sign in without google or GitHub account.
+name: Bug report
+about: Create a report to help us improve
 title: ''
 labels: bug
-assignees: mikementor
+assignees: 
 
 ---
 
 **Describe the bug**
-Don't login as user after sign in without google or GitHub account. 
+A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
-1. Go to 'https://n3point.io/login'
-2. Type your login and password, don't use buttons: login with GitHub or google.
-2. Click on 'Sign in'
-3. Wait redirect to homepage
-4. Between buttons: Rules and Feedback, you don't see your login with additional menu.
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
 **Expected behavior**
-Between buttons: Rules and Feedback, you see your login with additional menu.
+A clear and concise description of what you expected to happen.
+
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
- - OS: MacOS Mojave
- - Browser: Google chrome
- - Version: 75.0.3770.100
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
+
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
+
+**Additional context**
+Add any other context about the problem here.
+
