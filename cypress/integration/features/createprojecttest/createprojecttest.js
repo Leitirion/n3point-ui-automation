@@ -4,32 +4,30 @@ import { Given,Then } from "cypress-cucumber-preprocessor/steps";
 const url = Cypress.env("homepage");
 const emailAddress = Cypress.env("emailAddress1");
 const password = Cypress.env("password1");
-const CPT = Cypress.env("CPT");
+const projectName = "Test project"+Date.now()
 
+
+Given('I create test project, cause you check it in that test', () => {
+});
 // arrange
-Given(`given createprojecttest`, () => {
+Given(`I am on main page`, () => {
     // cy.xpath(page.button.locator).click()
     cy.visit(url)
-    cy.xpath('//a[text()="Login"]').click()
+    cy.xpath('//a[text()="Login / Sign up"]').click({force:true});
     cy.xpath("//input[@name='email']").type(emailAddress);
     cy.xpath("//input[@name='password']").type(password);
-    cy.xpath("//button[@data-id='submit']").click();
-})
+    cy.xpath("//button[@data-id='submit']").click({force:true});
+});
+
+When('I am create project', () => {
+    cy.xpath('.//a[@data-id="projectList"]').click({force:true});
+    cy.xpath('.//div[@data-id="project-list-modal"]//button[@class="ui grey button"]').click({force:true});
+    cy.xpath('.//div[@data-id="create-project-modal"]/div[@class="content"]//input[@name="name"]').type(projectName)
+    cy.xpath('.//div[@data-id="create-project-modal"]/div[@class="actions"]/button[@data-id="createProjectButton"]').click({force:true});
+});
 // act
 // assert
-Then(`then createprojecttest`, () => {
-    cy.xpath('.//div[@data-id="profile-listbox"]').click();
-    cy.get('a[data-id="projectList"]').click();
-    cy.xpath('.//p[text()="open-project"]').click();
-    cy.xpath('//a[@data-id="project"]').click();
-    cy.xpath("//input[@name='name']").clear().type(CPT);
-    cy.xpath("//div[@data-id='project-settings-modal']//button[@data-id='save']").click();
-    cy.get('a[data-id="project"]').should('have.text', CPT);
-    cy.xpath('//a[@data-id="project"]').click();
-    cy.xpath("//input[@name='name']").clear().type("open-project");
-    cy.xpath("//div[@data-id='project-settings-modal']//button[@data-id='save']").click();
-    cy.get('a[data-id="project"]').should('have.text', "open-project");
-    cy.xpath('.//div[@data-id="profile-listbox"]').click();
-    cy.xpath('.//div[text()="Logout"]').click();
-    cy.xpath('//a[text()="Login"]').should('have.text', "Login")
+Then('Then project name is', () => {
+    cy.xpath('//div[@data-id="project-list-modal"]').contains(projectName)
+    .should('have.text',projectName)
 })
