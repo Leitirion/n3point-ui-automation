@@ -19,5 +19,6 @@ require('cypress-xpath');
 Cypress.on("window:before:load", win => {
     win.indexedDB.deleteDatabase("firebaseLocalStorageDb");
   });
+  
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

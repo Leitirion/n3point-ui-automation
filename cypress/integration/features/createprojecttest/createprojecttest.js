@@ -1,23 +1,7 @@
 
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-
-const url = Cypress.env("homepage");
-const emailAddress = Cypress.env("emailAddress1");
-const password = Cypress.env("password1");
+import "../../features/auth-v2/auth-v2.js";
 const projectName = "Test project"+Date.now()
-
-
-Given('I create test project, cause you check it in that test', () => {
-});
-// arrange
-Given(`I am on main page`, () => {
-    // cy.xpath(page.button.locator).click()
-    cy.visit(url)
-    cy.xpath('//a[text()="Login / Sign up"]').click({force:true});
-    cy.xpath("//input[@name='email']").type(emailAddress);
-    cy.xpath("//input[@name='password']").type(password);
-    cy.xpath("//button[@data-id='submit']").click({force:true});
-});
 
 When('I am create project', () => {
     cy.xpath('.//a[@data-id="projectList"]').click({force:true});

@@ -5,8 +5,7 @@ const url = Cypress.env("homepage");
 const emailAddress = Cypress.env("emailAddress1");
 const password = Cypress.env("password1");
 
-Given('I authed, cause you check it in that test',() => {
-});
+
 // arrange
 Given(`I am on main page`, () => {
     // cy.xpath(page.button.locator).click()

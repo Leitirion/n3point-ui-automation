@@ -1,10 +1,9 @@
 
 Feature: Create test project, using this test feature
 Background:
-  Given I create test project, cause you check it in that test
-
+Given I am on main page
+When I am sign-in, using email
   @createprojecttest @focus
   Scenario: Create test project, using this test scenario
-    Given I am on main page
     When I am create project
     Then Then project name is 
