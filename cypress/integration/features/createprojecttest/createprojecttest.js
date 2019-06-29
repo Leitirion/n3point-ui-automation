@@ -1,5 +1,5 @@
 
-import { Given,Then } from "cypress-cucumber-preprocessor/steps";
+import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 
 const url = Cypress.env("homepage");
 const emailAddress = Cypress.env("emailAddress1");
