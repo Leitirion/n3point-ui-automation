@@ -15,7 +15,7 @@ When('I am share project', () => {
     cy.xpath('//button[@data-id="close"]').click()
 });
 
-Then('I am login to another user and see sharing project', () => {
+Then('Then I am login to user_2 and see sharing project', () => {
     cy.xpath('//div[@data-id="profile-listbox"]').contains("Logout").click({force:true});
     cy.xpath('//a[text()="Login / Sign up"]').click({force:true});
     cy.xpath("//input[@name='email']").type(emailAddress);
