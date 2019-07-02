@@ -4,7 +4,7 @@ Background:
   Given I am on main page
   When I am sign-in, using email
   When I am create project
-  Then Then project name is 
+  Then Then project is in project list
 
   @share-test 
   Scenario: share functional test scenario
