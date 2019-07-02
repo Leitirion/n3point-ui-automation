@@ -9,4 +9,4 @@ Background:
   @share-test 
   Scenario: share functional test scenario
     When I am share project
-    Then I am login to another user and see sharing project
+    Then I am login to user_2 and see sharing project
