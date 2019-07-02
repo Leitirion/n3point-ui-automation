@@ -1,8 +1,8 @@
 
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import { When, Then } from "cypress-cucumber-preprocessor/steps";
 import "../../features/auth-v2/auth-v2.js";
 const projectName = "Test project"+Date.now()
-const url = Cypress.env("homepage");
+
 
 
 

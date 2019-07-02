@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands';
 require('cypress-xpath');
+// eslint-disable-next-line
 indexedDB.deleteDatabase("firebaseLocalStorageDb");
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

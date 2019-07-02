@@ -89,9 +89,11 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 .DS_Store/
+
 #allure directories
 allure-report/
 allure-results/
+
 #cypress
 screenshots/
 cypress.env.json
