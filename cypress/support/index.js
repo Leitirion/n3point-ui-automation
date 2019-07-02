@@ -16,9 +16,6 @@
 // Import commands.js using ES2015 syntax:
 import './commands';
 require('cypress-xpath');
-Cypress.on("window:before:load", win => {
-    win.indexedDB.deleteDatabase("firebaseLocalStorageDb");
-  });
-  
+indexedDB.deleteDatabase("firebaseLocalStorageDb");
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

@@ -2,6 +2,9 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import "../../features/auth-v2/auth-v2.js";
 const projectName = "Test project"+Date.now()
+const url = Cypress.env("homepage");
+
+
 
 When('I am create project', () => {
     cy.xpath('.//a[@data-id="projectList"]').click({force:true});
@@ -11,7 +14,7 @@ When('I am create project', () => {
 });
 // act
 // assert
-Then('Then project name is', () => {
+Then('Then project is in project list', () => {
     cy.xpath('//div[@data-id="project-list-modal"]').contains(projectName)
     .should('have.text',projectName)
 })
