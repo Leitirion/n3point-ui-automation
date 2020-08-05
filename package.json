@@ -22,7 +22,7 @@
   "dependencies": {
     "allure-cucumberjs": "^2.0.0-beta.7",
     "cypress-xpath": "^1.6.0",
-    "mocha": "^8.1.0",
+    "mocha": "^8.1.1",
     "mocha-allure-reporter": "^1.4.0"
   },
   "cypress-cucumber-preprocessor": {
