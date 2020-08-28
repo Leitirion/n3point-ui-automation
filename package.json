@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "cypress": "^5.0.0",
-    "cypress-cucumber-preprocessor": "^2.5.4"
+    "cypress-cucumber-preprocessor": "^2.5.5"
   }
 }
