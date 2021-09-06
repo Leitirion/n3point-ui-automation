@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Leitirion/Test#readme",
   "dependencies": {
-    "allure-cucumberjs": "^2.0.0-beta.12",
+    "allure-cucumberjs": "^2.0.0-beta.13",
     "cypress-xpath": "^1.6.2",
     "mocha": "^9.1.1",
     "mocha-allure-reporter": "^1.4.0"
