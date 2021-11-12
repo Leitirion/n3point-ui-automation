@@ -29,7 +29,7 @@
     "nonGlobalStepDefinitions": true
   },
   "devDependencies": {
-    "cypress": "^8.7.0",
+    "cypress": "^9.0.0",
     "cypress-cucumber-preprocessor": "^4.3.0"
   }
 }
